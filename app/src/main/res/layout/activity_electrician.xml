@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    tools:context=".helpActivities.ElectricianActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/eleCallButton1"
+        android:layout_width="70dp"
+        android:layout_height="66dp"
+        android:background="@drawable/call"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/eleCallButton"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="98dp"
+        app:layout_constraintLeft_toLeftOf="@+id/eleCallButton"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="374dp"
+        android:layout_height="97dp"
+        android:text="Name: Harshal Joshi
+Address: A1/2 palldium,Nr.BOM, Kothrud,Pune"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/eleMsgButton1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/eleCallButton"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/eleCallButton"
+        android:layout_width="70dp"
+        android:layout_height="66dp"
+        android:background="@drawable/call"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/eleMsgButton"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="181dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="13dp" />
+
+    <Button
+        android:id="@+id/eleMsgButton"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:background="@drawable/message"
+        android:layout_marginEnd="5dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/eleCallButton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/eleMsgButton1"
+        android:layout_width="88dp"
+        android:layout_height="60dp"
+        android:background="@drawable/message"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eleCallButton1"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/eleCallButton1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:text=" Electricians"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="94dp"
+        android:text="Name: Karan Velhal
+Address: 8, Apurvagad, Nr.BOM, Bavdhan,Pune"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="75dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+</android.support.constraint.ConstraintLayout>

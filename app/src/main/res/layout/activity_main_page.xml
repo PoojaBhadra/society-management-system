@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center"
+    android:background="@drawable/w1"
+    android:weightSum="1"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/profileField1"
+        android:layout_width="128dp"
+        android:layout_height="28dp"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textColor="#000000"
+
+        android:textSize="20dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="68dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/cm_demo"
+        android:layout_width="224dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.57"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="147dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="147dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:src="@drawable/text"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp" />
+
+    <TextView
+        android:id="@+id/noticesText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notices"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginEnd="28dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cm_demo"
+        android:layout_marginRight="28dp" />
+
+    <TextView
+        android:id="@+id/mainText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maintainance"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginEnd="20dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        android:layout_marginBottom="31dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:id="@+id/compText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="Complaints"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="35dp" />
+
+    <TextView
+        android:id="@+id/helpText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginStart="49dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cm_demo"
+        android:layout_marginLeft="49dp" />
+
+
+</android.support.constraint.ConstraintLayout>

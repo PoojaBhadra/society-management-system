@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tejashree.societymanagementsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".gui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gui.adminGUI.RegisterSocietyActivity" />
+        <activity android:name=".gui.memberGUI.CreateNewMemberActivity" />
+        <activity android:name=".gui.memberGUI.OTPMailVerifierUserActivity" />
+        <activity android:name=".gui.memberGUI.MemberActivity" />
+        <activity android:name=".helpActivities.ElectricianActivity" />
+        <activity android:name=".helpActivities.HelpActivity" />
+        <activity android:name=".helpActivities.PestControlActivity" />
+        <activity android:name=".gui.adminGUI.OtpMailVerifierAdminActivity" />
+        <activity android:name=".gui.memberGUI.memberCircleMenus.ViewNoticeActivity" />
+        <activity android:name=".gui.MaintainanceActivity" />
+        <activity android:name=".gui.memberGUI.ComplaintActivity" />
+        <activity android:name=".gui.adminGUI.AdminActivity" />
+        <activity android:name=".gui.adminGUI.adminCircleMenus.ViewRequestActivity" />
+        <activity
+            android:name=".gui.adminGUI.adminCircleMenus.DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".gui.adminGUI.adminCircleMenus.ViewComplaintsActivity" />
+        <activity android:name=".gui.adminGUI.adminCircleMenus.ViewComplaints2Activity" />
+        <activity android:name=".gui.adminGUI.adminCircleMenus.AdminNoticeActivity" />
+        <activity android:name=".gui.memberGUI.memberCircleMenus.ViewNoticeActivity2" />
+        <activity android:name=".gui.memberGUI.memberCircleMenus.MemberProfileActivity" />
+        <activity android:name=".gui.adminGUI.adminCircleMenus.AdminProfileActivity" />
+        <activity android:name=".gui.memberGUI.MemberSettingsActivity" />
+        <activity android:name=".gui.memberGUI.ChangePasswordActivity" />
+        <activity android:name=".gui.adminGUI.AdminSettingsActivity" />
+        <activity android:name=".gui.adminGUI.adminCircleMenus.ChangeAdminPasswordActivity" />
+        <activity android:name=".gui.adminGUI.RemoveMemberActivity" />
+        <activity android:name=".helpActivities.PlumberActivity" />
+        <activity android:name=".helpActivities.ISPActivity" />
+        <activity android:name=".helpActivities.ShopActivity" />
+        <activity android:name=".helpActivities.WaterSupplyActivity" />
+    </application>
+
+</manifest>

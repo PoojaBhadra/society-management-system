@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+
+    tools:context="com.example.tejashree.societymanagementsystem.gui.adminGUI.AdminActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/noticesText"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:text="Notices"
+        android:textAlignment="center"
+        android:textColor="#000000"
+
+        android:textSize="20dp"
+        android:layout_marginEnd="31dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/compText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/compText"
+        android:layout_marginRight="31dp" />
+
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/cm_demo"
+        android:layout_width="224dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.57"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="155dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="155dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:src="@drawable/text"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="33dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp" />
+
+    <TextView
+        android:id="@+id/requestField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/helpText"
+        app:layout_constraintRight_toRightOf="@+id/cm_demo"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/helpText"
+        app:layout_constraintLeft_toRightOf="@+id/cm_demo" />
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maintainance"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginStart="3dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/noticesText"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/compText"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:id="@+id/compText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:text="Complaints"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="149dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="27dp" />
+
+    <TextView
+        android:id="@+id/profileField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginStart="70dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/cm_demo"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintLeft_toLeftOf="@+id/cm_demo"
+        android:layout_marginLeft="70dp" />
+
+    <TextView
+        android:id="@+id/helpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:text="Help"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintRight_toLeftOf="@+id/mainText"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="45dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="140dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

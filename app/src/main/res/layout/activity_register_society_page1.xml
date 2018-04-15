@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    tools:context="com.example.tejashree.societymanagementsystem.gui.adminGUI.RegisterSocietyActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/societyNameID"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textboxstyleroundcap"
+        android:ems="10"
+        android:hint=" Society Name"
+        android:inputType="textPersonName"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/societyAddressID"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/adminID"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textboxstyleroundcap"
+        android:ems="10"
+        android:hint= "  Admin Name"
+        android:inputType="text"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/societyAddressID"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/societyAddressID"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/societyAddressID" />
+
+    <EditText
+        android:id="@+id/societyAddressID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=" Society Address"
+        android:scrollbars="vertical"
+        android:lines="4"
+        android:maxLines="10"
+        android:inputType="textMultiLine"
+        android:background="@drawable/textboxstyleroundcap"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="79dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/registerSocietyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_society"
+
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordID"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/emailID"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textboxstyleroundcap"
+        android:ems="10"
+        android:hint="  Email ID"
+        android:inputType="textEmailAddress"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/adminID"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/adminID"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/adminID" />
+
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="0dp"
+        android:background="@drawable/textboxstyleroundcap"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/emailID"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/emailID"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/emailID" />
+
+    <EditText
+        android:id="@+id/confirmPasswordID"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:background="@drawable/textboxstyleroundcap"
+        android:inputType="textPassword"
+        android:hint=" Confirm Password"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/passwordID"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/passwordID"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/passwordID" />
+
+</android.support.constraint.ConstraintLayout>
