@@ -8,6 +8,6 @@ package com.example.tejashree.societymanagementsystem.emailVerification;
 
 public class Config
 {
-    public static final String EMAIL ="societymanagementsystem1997@gmail.com";
-    public static final String PASSWORD ="society123";
+    public static final String EMAIL ="";
+    public static final String PASSWORD ="";
 }
